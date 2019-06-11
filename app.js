@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const auth = require("./auth.json");
+const auth = "";
 const Gamedig = require('gamedig');
 const client = new Discord.Client();
 
@@ -34,6 +34,6 @@ client.on('message', async message => {
     }
 });
 
-const token = process.env.token || auth.token
+const token = process.env.token || auth
 
 client.login(token);
