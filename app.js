@@ -16,7 +16,7 @@ for(const file of commandFiles) {
 }
 
 client.on('ready', () => {
-    console.log('USSFBot v' + VERSION) + " ready!";
+    console.log('USSFBot v' + VERSION)
 });
 
 client.on('message', async message => {
