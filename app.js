@@ -4,6 +4,7 @@ const client = new Discord.Client();
 
 const auth = "";
 const PREFIX = "."
+const VERSION = "1.1"
 
 client.commands = new Discord.Collection();
 
@@ -15,7 +16,7 @@ for(const file of commandFiles) {
 }
 
 client.on('ready', () => {
-    console.log('Bot is ready!');
+    console.log('USSFBot v' + VERSION) + " ready!";
 });
 
 client.on('message', async message => {
